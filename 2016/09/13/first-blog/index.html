@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="测试," />
 
 
 
@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="专注">
-<meta property="og:type" content="website">
-<meta property="og:title" content="路漫漫其修远兮">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="hadoop伪分布式配置hadoop-env.sh1export JAVA_HOME=/opt/modules/jdk1.7.0_67
+yarn-env.shcore-site.xml12345678910111213141516&amp;lt;configuration&amp;gt;    &amp;lt;property&amp;gt;        &amp;lt;name&amp;gt;fs.defaultFS&amp;lt;/name&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="first blog">
+<meta property="og:url" content="http://yoursite.com/2016/09/13/first-blog/index.html">
 <meta property="og:site_name" content="路漫漫其修远兮">
-<meta property="og:description" content="专注">
+<meta property="og:description" content="hadoop伪分布式配置hadoop-env.sh1export JAVA_HOME=/opt/modules/jdk1.7.0_67
+yarn-env.shcore-site.xml12345678910111213141516&amp;lt;configuration&amp;gt;    &amp;lt;property&amp;gt;        &amp;lt;name&amp;gt;fs.defaultFS&amp;lt;/name&amp;gt">
+<meta property="og:updated_time" content="2016-09-13T09:16:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="路漫漫其修远兮">
-<meta name="twitter:description" content="专注">
+<meta name="twitter:title" content="first blog">
+<meta name="twitter:description" content="hadoop伪分布式配置hadoop-env.sh1export JAVA_HOME=/opt/modules/jdk1.7.0_67
+yarn-env.shcore-site.xml12345678910111213141516&amp;lt;configuration&amp;gt;    &amp;lt;property&amp;gt;        &amp;lt;name&amp;gt;fs.defaultFS&amp;lt;/name&amp;gt">
 
 
 
@@ -113,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/13/first-blog/"/>
 
-  <title> 路漫漫其修远兮 </title>
+  <title> first blog | 路漫漫其修远兮 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -245,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -267,10 +269,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/09/13/first-blog/" itemprop="url">
-                  first blog
-                </a>
+                first blog
               
             
           </h1>
@@ -310,9 +309,7 @@
       
 
       
-        
-          
-            <h2 id="hadoop"><a href="#hadoop" class="headerlink" title="hadoop"></a>hadoop</h2><h3 id="伪分布式配置"><a href="#伪分布式配置" class="headerlink" title="伪分布式配置"></a>伪分布式配置</h3><h4 id="hadoop-env-sh"><a href="#hadoop-env-sh" class="headerlink" title="hadoop-env.sh"></a>hadoop-env.sh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=/opt/modules/jdk1.7.0_67</div></pre></td></tr></table></figure>
+        <h2 id="hadoop"><a href="#hadoop" class="headerlink" title="hadoop"></a>hadoop</h2><h3 id="伪分布式配置"><a href="#伪分布式配置" class="headerlink" title="伪分布式配置"></a>伪分布式配置</h3><h4 id="hadoop-env-sh"><a href="#hadoop-env-sh" class="headerlink" title="hadoop-env.sh"></a>hadoop-env.sh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=/opt/modules/jdk1.7.0_67</div></pre></td></tr></table></figure>
 <h4 id="yarn-env-sh"><a href="#yarn-env-sh" class="headerlink" title="yarn-env.sh"></a>yarn-env.sh</h4><h4 id="core-site-xml"><a href="#core-site-xml" class="headerlink" title="core-site.xml"></a>core-site.xml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;fs.defaultFS&lt;/name&gt;</div><div class="line">        &lt;value&gt;hdfs://dev-bigdata.com:8020&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;hadoop.tmp.dir&lt;/name&gt;</div><div class="line">        &lt;value&gt;/opt/modules/hadoop-2.5.0-cdh5.3.6/data/tmp&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;hadoop.http.staticuser.user&lt;/name&gt;</div><div class="line">        &lt;value&gt;bigdata&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure>
 <h4 id="hdfs-site-xml"><a href="#hdfs-site-xml" class="headerlink" title="hdfs-site.xml"></a>hdfs-site.xml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;dfs.replication&lt;/name&gt;</div><div class="line">        &lt;value&gt;1&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;dfs.permissions.enabled&lt;/name&gt;</div><div class="line">        &lt;value&gt;false&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;dfs.namenode.secondary.http-address&lt;/name&gt;</div><div class="line">        &lt;value&gt;dev-bigdata.com:50090&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;dfs.web.ugi&lt;/name&gt;</div><div class="line">        &lt;value&gt;zhangjianxi,supergroup&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure>
 <h4 id="yarn-site-xml"><a href="#yarn-site-xml" class="headerlink" title="yarn-site.xml"></a>yarn-site.xml</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt;</div><div class="line">        &lt;value&gt;mapreduce_shuffle&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;yarn.resourcemanager.hostname&lt;/name&gt;</div><div class="line">        &lt;value&gt;dev-bigdata.com&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;!-- log aggregation --&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;yarn.log-aggregation-enable&lt;/name&gt;</div><div class="line">        &lt;value&gt;true&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line"></div><div class="line">    &lt;!-- log save time(sec) --&gt;</div><div class="line">    &lt;property&gt;</div><div class="line">        &lt;name&gt;yarn.log-aggregation.retain-seconds&lt;/name&gt;</div><div class="line">        &lt;value&gt;3600&lt;/value&gt;</div><div class="line">    &lt;/property&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure>
@@ -396,138 +393,59 @@
 <h2 id="sqoop"><a href="#sqoop" class="headerlink" title="sqoop"></a>sqoop</h2><h3 id="配置-3"><a href="#配置-3" class="headerlink" title="配置"></a>配置</h3><h4 id="sqoop-env-sh"><a href="#sqoop-env-sh" class="headerlink" title="sqoop-env.sh"></a>sqoop-env.sh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hadoop@dev-hadoop-single conf]$ cp sqoop-env-template.sh sqoop-env.sh</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">#Set path to where bin/hadoop is available</div><div class="line">export HADOOP_COMMON_HOME=/opt/modules/hadoop-2.5.0-cdh5.3.6</div><div class="line"></div><div class="line">#Set path to where hadoop-*-core.jar is available</div><div class="line">export HADOOP_MAPRED_HOME=/opt/modules/hadoop-2.5.0-cdh5.3.6</div><div class="line"></div><div class="line">#set the path to where bin/hbase is available</div><div class="line">#export HBASE_HOME=</div><div class="line"></div><div class="line">#Set the path to where bin/hive is available</div><div class="line">export HIVE_HOME=/opt/modules/hive-0.13.1-cdh5.3.6</div></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[hadoop@dev-hadoop-single ~]$ cp /opt/software/mysql-connector-java-5.1.26-bin.jar /opt/modules/sqoop-1.4.5-cdh5.3.6/lib/</div></pre></td></tr></table></figure>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/13/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-13T15:07:56+08:00" content="2016-09-13">
-              2016-09-13
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/测试/" rel="tag">#测试</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/13/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -535,6 +453,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -554,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/headimg.jpg"
@@ -598,6 +529,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hadoop"><span class="nav-number">1.</span> <span class="nav-text">hadoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#伪分布式配置"><span class="nav-number">1.1.</span> <span class="nav-text">伪分布式配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hadoop-env-sh"><span class="nav-number">1.1.1.</span> <span class="nav-text">hadoop-env.sh</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#yarn-env-sh"><span class="nav-number">1.1.2.</span> <span class="nav-text">yarn-env.sh</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#core-site-xml"><span class="nav-number">1.1.3.</span> <span class="nav-text">core-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hdfs-site-xml"><span class="nav-number">1.1.4.</span> <span class="nav-text">hdfs-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#yarn-site-xml"><span class="nav-number">1.1.5.</span> <span class="nav-text">yarn-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mapreduce-site-xml"><span class="nav-number">1.1.6.</span> <span class="nav-text">mapreduce-site.xml</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动"><span class="nav-number">1.2.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试"><span class="nav-number">1.3.</span> <span class="nav-text">测试</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hive"><span class="nav-number">2.</span> <span class="nav-text">Hive</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用默认数据库配置"><span class="nav-number">2.1.</span> <span class="nav-text">使用默认数据库配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hive-site-xml"><span class="nav-number">2.1.1.</span> <span class="nav-text">hive-site.xml</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hive-env-sh"><span class="nav-number">2.1.2.</span> <span class="nav-text">hive-env.sh</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hive-exec-log4j-properties"><span class="nav-number">2.1.3.</span> <span class="nav-text">hive-exec-log4j.properties</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hive-log4j-properties"><span class="nav-number">2.1.4.</span> <span class="nav-text">hive-log4j.properties</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用mysql数据库配置"><span class="nav-number">2.2.</span> <span class="nav-text">使用mysql数据库配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据库配置，使用mysql5-6"><span class="nav-number">2.2.1.</span> <span class="nav-text">数据库配置，使用mysql5.6</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地数据库作为metastore模式："><span class="nav-number">2.2.2.</span> <span class="nav-text">本地数据库作为metastore模式：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">配置</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程数据库作为metastore模式"><span class="nav-number">2.2.3.</span> <span class="nav-text">远程数据库作为metastore模式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置-1"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#启动-1"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">启动</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HiveServer2使用"><span class="nav-number">2.2.4.</span> <span class="nav-text">HiveServer2使用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#配置-2"><span class="nav-number">2.2.4.1.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#启动-2"><span class="nav-number">2.2.4.2.</span> <span class="nav-text">启动</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#使用"><span class="nav-number">2.2.4.3.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例操作"><span class="nav-number">2.3.</span> <span class="nav-text">实例操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sqoop"><span class="nav-number">3.</span> <span class="nav-text">sqoop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置-3"><span class="nav-number">3.1.</span> <span class="nav-text">配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#sqoop-env-sh"><span class="nav-number">3.1.1.</span> <span class="nav-text">sqoop-env.sh</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -701,6 +643,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
